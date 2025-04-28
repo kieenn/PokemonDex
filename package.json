@@ -2,8 +2,6 @@
   "name": "pokedex",
   "main": "expo-router/entry",
   "version": "1.0.0",
-  "private": true, 
-  "homepage": "https://kieenn.github.io/PokemonDex",
   "scripts": {
     "start": "expo start",
     "reset-project": "node ./scripts/reset-project.js",
@@ -11,11 +9,7 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "test": "jest --watchAll",
-    "lint": "expo lint",
-
-      "predeploy": "expo export -p web", 
-      "deploy": "gh-pages -d dist"      
-
+    "lint": "expo lint"
   },
   "jest": {
     "preset": "jest-expo"
