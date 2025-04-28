@@ -1,50 +1,75 @@
-# Welcome to your Expo app 👋
+# PokemonDex Pokedex App Pokeball
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+[![Expo Go](https://img.shields.io/badge/Expo%20Go-4630EB?style=for-the-badge&logo=expo&logoColor=white)](https://expo.dev/go)
+[![React Native](https://img.shields.io/badge/React_Native-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)](https://reactnative.dev/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
 
-## Get started
+A Pokedex application built using Expo (React Native) that allows users to browse, search, filter, and view details about various Pokémon. It also includes features like theme switching and marking favorites.
 
-1. Install dependencies
+[**Access the deployed web version here!**](https://kieenn.github.io/PokemonDex/)
 
-   ```bash
-   npm install
-   ```
+## ✨ Features
 
-2. Start the app
+- **Browse Pokémon:** View a comprehensive list of Pokémon with a responsive grid layout.
+- **Detailed View:** Tap on a Pokémon to see its details, including stats, abilities, Pokédex entry, evolution chain, etc.
+- **Search:** Quickly find Pokémon by name using the search bar.
+- **Advanced Filtering:** Filter the main list by Pokémon Type and Region using dropdown selectors.
+- **Favorites:** Mark Pokémon as favorites using a heart icon. Loved Pokémon are saved locally using AsyncStorage.
+- **Favorites List:** View all your favorited Pokémon on a dedicated tab.
+- **Theme Switching:** Toggle between Light and Dark themes.
+- **Web Deployment:** Accessible as a web application via GitHub Pages.
+- **Responsive Design:** The grid layout adapts to different screen sizes.
 
-   ```bash
-    npx expo start
-   ```
+## Tech Stack
 
-In the output, you'll find options to open the app in a
+- **Framework:** Expo SDK (React Native)
+- **Language:** TypeScript
+- **Navigation:** Expo Router (File-based routing)
+- **State Management:** React Context API (for Theme and Favorites)
+- **Local Storage:** `@react-native-async-storage/async-storage`
+- **HTTP Client:** Axios (for fetching from PokeAPI)
+- **UI Components:** React Native core components, `@react-native-picker/picker`
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+## Getting Started
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+### Prerequisites
 
-## Get a fresh project
+- Node.js (LTS version recommended, e.g., v18 or later)
+- npm or yarn
+- Git
+- **(Optional for Mobile Testing)**
+  - Expo Go App on your iOS or Android device.
+  - Android Studio (for Android emulator)
+  - Xcode (for iOS simulator - macOS only)
 
-When you're ready, run:
+### Installation
+
+1.  **Clone the repository:**
+    ```bash
+    git clone https://github.com/kieenn/PokemonDex.git
+    ```
+2.  **Navigate to the project directory:**
+    ```bash
+    cd PokemonDex
+    # Or 'cd pokedex' if your local folder name is different
+    ```
+3.  **Install dependencies:**
+    ```bash
+    npm install
+    # OR
+    # yarn install
+    ```
+
+## Running the App
+
+You can run the application on different platforms:
+
+### 1. Web Browser (Recommended for quick testing)
 
 ```bash
-npm run reset-project
+npx expo start --web
+# OR using package.json script:
+npm run web
+# OR
+yarn web
 ```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
